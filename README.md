@@ -40,7 +40,7 @@
     axios 데이터 load 에러 수정  
 ---------------
 
-## 4.  
+## 4. 프로젝트 빌드 에러 시  
 * npm cache clean --force
 * npm install
 
