@@ -40,7 +40,7 @@
     axios 데이터 load 에러 수정  
 ---------------
 
-## 4. 추가  
+## 4.  
 * npm cache clean --force
-* 2npm install
+* npm install
 
