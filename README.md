@@ -1,8 +1,8 @@
-Vue.js를 활용한 홈페이지 제작
+기록용 홈페이지
 ============================
 
-## 1. 홈페이지 명
-* Carpediem
+## 1. 프로젝트 명
+* Carpediem(1인 프로젝트)
 ---------------
 
 ## 2. 주요 기능
@@ -11,44 +11,29 @@ Vue.js를 활용한 홈페이지 제작
 * 화면 흑백반전
 ---------------
 
-## 4. 진행과정
-* 2019-11-06 "Vue.js 코딩 공작소"를 활용해 학습    
-  : [MVVM패턴](https://hyem-study.tistory.com/20), [생명주기](https://hyem-study.tistory.com/21), 조건문, 반복문 실습  
+## 4. 프로젝트 기간(22.02.21 ~ 22.03.07)
+* 2022.02.21
+  : Vue-CLI 프로젝트 생성 및 프로젝트 구조 이해 
 
-* 2019-11-15 "Vue.js 코딩 공작소"를 활용해 학습2    
-  : [컴포넌트](https://hyem-study.tistory.com/25), 트렌지션, 애니메이션 등
+* 2022.02.22
+  : 메인화면 생성
+  (main,content 2개의 컴포넌트로 분할)
 
-* 2019-11-17  
-  : hyem-portfolio 프로젝트 생성(Vue-CLI를 활용), 
-    프로젝트 구조 이해  
+* 2022.02.23
+  : node 서버 생성 및 axios post 테스트
 
-* 2019-12-05  
-  : Firebase를 활용한 호스팅
+* 2022.03.02
+  : 메인화면 미디어쿼리 설정 및 axios get 테스트
+    node fs를 이용한 이미지 다운로드 테스트
 
-* 2019-12-13  
-  : 헤더와 뷰 부분을 분리해서 추가
-    Home, About 페이지 추가 (미완성) 
+* 2022.03.03
+  : Read.vud / Write.vue 생성
+    MainLoading.vue 생성
+    흑백 반전 이벤트 설정
 
-* 2019-12-17  
-  : About -> Profile로 파일명 수정,  
-    Profile 내용 추가  
-    Skills, Projects 경로와 파일 생성  
-
-* 2019-12-18  
-  : Skills에 chart.js활용 그래프 추가  
-
-* 2019-12-20  
-  : Skills에 Image추가,  
-    이미지에 text overlay 기능 추가 (진행중)  
+* 2022.03.04 
+  : 필터링 기능 설정
     
-* 2019-12-21  
-  : 이미지 overlay 기능 구현 완료,  
-    skills.json 생성,  
-    json데이터 로드 후 파싱해서 리스트화,  
-    리스트의 이미지로드 과정에서 CORS문제 발생 해결 진행 중  
-    
-* 2020-01-05  
-  : skills.json을 firebase rtdb에 이동,  
-    프로젝트 이력에 대한 데이터 rtdb에 추가  
-    firebase로부터 데이터 로드 후 파싱해서 리스트화(Skills.vue 수정, Projects.vue 생성)  
-    배포완료  
+* 2022.03.07
+  : 로딩화면 흑백반전 설정
+    axios 데이터 load 에러 수정
