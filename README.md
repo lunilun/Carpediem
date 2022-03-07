@@ -38,9 +38,4 @@
   : 로딩화면 흑백반전 설정  
     메인화면에 MainLoading.vue 컴포넌트 추가     
     axios 데이터 load 에러 수정  
----------------
-
-## 4. 프로젝트 빌드 에러 시  
-* npm cache clean --force
-* npm install
 
