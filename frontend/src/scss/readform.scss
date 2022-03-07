@@ -1,0 +1,118 @@
+.readfrom {
+  position: absolute;
+  @include size-set(100%, 100vh);
+  z-index: 1000;
+  .cover {
+    position: inherit;
+    @include size-set(100%, 100%);
+    background: black;
+    opacity: 0.3;
+    z-index: 1000;
+  }
+  .readCont {
+    position: inherit;
+    @include size-set(60%, 70%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1001;
+    border-radius: 30px;
+    .Imgcover {
+      position: absolute;
+      @include size-set(71%, 81%);
+      transform: translate(-1%, -1%);
+      border-radius: 30px;
+    }
+    .memoImg {
+      @include size-set(70%, 80%);
+      border-radius: 30px;
+      object-fit: fill;
+      box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.5);
+    }
+    .inner {
+      //z-indxe로 이미지를 맨앞으로 보이게?!
+      position: inherit;
+      right: 1%;
+      bottom: 1%;
+      @include size-set(40%, 60%);
+      border-radius: 20px;
+      border: 2px solid black;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.5);
+      .memoTitle {
+        @include font-set-ex(30px, $inner-txt, 40px);
+      }
+      .memoDate,
+      .memoCate {
+        @include font-set-ex(24px, $inner-txt, 24px);
+        text-align: right;
+      }
+      .maincontent {
+        margin-top: 2px;
+        textarea {
+          @include font-set-ex(20px, $inner-txt, 20px);
+          overflow: scroll;
+          overflow-x: hidden;
+        }
+      }
+      .evbtns {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        button {
+          width: 35%;
+          @include font-set(20px, $inner-txt);
+          border: 1px solid black;
+          border-radius: 30px;
+          background: white;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .maincontent {
+      @include size-set(100%, 100%);
+      #cont {
+        @include size-set(100%, 100%);
+        resize: none;
+        overflow: hidden;
+        border: none;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .readfrom {
+    .readCont {
+      .Imgcover {
+        width: 101%;
+      }
+      .memoImg {
+        width: 100%;
+      }
+      .inner {
+        @include size-set(100%, 40%);
+        right: 0;
+        bottom: -10%;
+        .memoDate,
+        .memoCate {
+          position: absolute;
+          right: 15px;
+        }
+        .memoCate {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}

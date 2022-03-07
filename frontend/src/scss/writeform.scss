@@ -1,0 +1,153 @@
+.writefrom {
+  position: absolute;
+  @include size-set(100%, 100vh);
+  z-index: 1000;
+  .cover {
+    position: inherit;
+    @include size-set(100%, 100%);
+    background: black;
+    opacity: 0.3;
+    z-index: 1000;
+  }
+  .writeCont {
+    position: inherit;
+    @include size-set(60%, 70%);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1001;
+    border-radius: 30px;
+    .memoImg {
+      @include size-set(70%, 80%);
+      border-radius: 30px;
+      object-fit: fill;
+      box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.5);
+    }
+    .file {
+      position: absolute;
+      bottom: 5%;
+      @include font-set(30px, $inner-txt);
+      color: white;
+      label {
+        display: inline-block;
+        width: 150px;
+        height: 50px;
+        background: gray;
+        cursor: pointer;
+        line-height: 50px;
+        border-radius: 15px;
+        text-align: center;
+      }
+      #selName {
+        display: inline-block;
+        width: auto;
+        margin-left: 10px;
+      }
+      input {
+        display: none;
+      }
+    }
+    .inner {
+      position: inherit;
+      right: 1%;
+      bottom: 1%;
+      @include size-set(40%, 60%);
+      border-radius: 20px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.5);
+      border: 2px solid black;
+    }
+    .memoTitle input {
+      width: 50%;
+      @include font-set-ex(25px, $inner-txt, 25px);
+      border: none;
+      text-indent: 5px;
+      &:focus {
+        border-radius: 10px;
+      }
+    }
+    .memoCate {
+      @include font-set-ex(24px, $inner-txt, 24px);
+      text-align: right;
+    }
+    .memoCate select {
+      padding: 1px;
+      border: 1px solid #999;
+      border-radius: 3px;
+      appearance: none;
+    }
+    .maincontent {
+      @include size-set(100%, 100%);
+      margin: 10px 0;
+      #cont {
+        @include size-set(100%, 100%);
+        @include font-set-ex(24px, $inner-txt, 24px);
+        resize: none;
+        overflow: hidden;
+        border: none;
+        padding: 5px;
+        &:focus {
+          border-radius: 10px;
+        }
+      }
+    }
+    .evbtns {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      button {
+        width: 20%;
+        @include font-set(20px, $inner-txt);
+        border: 1px solid black;
+        border-radius: 30px;
+        background: white;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .writefrom {
+    .writeCont {
+      .Imgcover {
+        width: 101%;
+      }
+      .memoImg {
+        width: 100%;
+      }
+      .inner {
+        @include size-set(100%, 40%);
+        right: 0;
+        bottom: -10%;
+        .memoCate {
+          position: absolute;
+          right: 15px;
+        }
+      }
+      .file {
+        top: -10%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .writefrom {
+    .writeCont {
+      .file {
+        label {
+          width: 100px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}

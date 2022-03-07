@@ -1,0 +1,146 @@
+.detail {
+  position: relative;
+  @include size-set(100%, 100vh);
+  min-width: 530px;
+  overflow: hidden;
+  .gohome {
+    position: absolute;
+    @include size-set(50px, 50px);
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    right: 10px;
+    top: 70px;
+    padding: 2px;
+    button {
+      @include size-set(100%, 100%);
+      background: url("../Img/Icon/gohome.png") no-repeat center;
+      background-size: contain;
+      border: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .goWrite {
+    position: absolute;
+    @include size-set(50px, 50px);
+    background: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    right: 10px;
+    top: 130px;
+    padding: 2px;
+    button {
+      @include size-set(100%, 100%);
+      background: url("../Img/Icon/write.png") no-repeat center;
+      background-size: contain;
+      border: none;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+  .warp {
+    position: relative;
+    @include size-set(70%, 100vh);
+    margin: 10px auto;
+    .inner {
+      @include size-set(100%, 100%);
+      .topmenu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #topTitle {
+          @include size-set(auto, 100%);
+          @include font-set(50px, $inner_txt);
+        }
+        .menus {
+          @include size-set(auto, 100%);
+          text-align: right;
+          .mlist {
+            display: inline-block;
+            border: none;
+            button {
+              @include size-set(auto, 35px);
+              @include font-set(30px, $inner_txt);
+              border: none;
+              background: none;
+              &:not(#btn4) {
+                margin-right: 15px;
+              }
+            }
+            :hover {
+              cursor: pointer;
+              color: red;
+              transition: all 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+  .detail .warp .inner {
+    .topmenu {
+      flex-direction: column;
+      p {
+        @include font-set(40px, $inner_txt);
+      }
+      .menus {
+        @include size-set(100%, 100%);
+        text-align: center;
+        .mlist {
+          width: calc(100% / 5);
+          button {
+            @include font-set(25px, $inner_txt);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .detail .warp .inner {
+    .topmenu {
+      flex-direction: column;
+      p {
+        @include font-set(40px, $inner_txt);
+      }
+      .menus {
+        @include size-set(100%, 100%);
+        text-align: center;
+        .mlist {
+          width: calc(100% / 5);
+          button {
+            @include font-set(25px, $inner_txt);
+          }
+        }
+      }
+    }
+  }
+}
+
+// @media screen and (max-width:1000px) and (min-width:510px){
+//   .detail{
+//     .warp{
+//       overflow: visible;
+//       .rightSide{
+//         width: 100%;
+//         float: none;
+//       }
+//       .leftSide{
+//         display: none;
+//         width: 100%;
+//         float: none;
+//       }
+//     }
+//   }
+// }
+
+// @media screen and (max-width:500px) {
+
+// }

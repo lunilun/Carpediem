@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+
+$title_txt: "Yanone Kaffeesatz", sans-serif;
+$inner_txt: "Dongle", sans-serif;
+$con_txt: "Festive", cursive;
+$side_txt: "Supermercado One", cursive;
+
+$black: black;
+$gray: gray;
+$white: white;
+
+.animate__animated {
+  animation-delay: 0.3s;
+}
+
+@mixin font-set($size, $style) {
+  font-family: $style;
+  font-size: $size;
+}
+
+@mixin font-set-ex($size, $style, $lineh) {
+  @include font-set($size, $style);
+  line-height: $lineh;
+}
+@mixin size-set($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin ScrollSet($barsize, $etcsize) {
+  &::-webkit-scrollbar {
+    width: $barsize;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $white;
+    border: 1px solid $gray;
+    border-radius: $etcsize;
+  }
+  &::-webkit-scrollbar-track {
+    background: $gray;
+    border-radius: $etcsize;
+  }
+}
+
+@mixin ab($top) {
+  position: absolute;
+  top: $top;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(0) translateX(-50%);
+    opacity: 1;
+  }
+  25% {
+    transform: translateY(20%) translateX(-50%);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(40%) translateX(-50%);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translateY(60%) translateX(-50%);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateY(80%) translateX(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@keyframes rotrot {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

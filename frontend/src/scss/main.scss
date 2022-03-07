@@ -1,0 +1,33 @@
+.mains {
+  height: 100vh;
+  @include size-set(100vw, 100vh);
+  position: relative;
+  .mainTitle {
+    @include size-set(100%, 100%);
+    @include font-set(60px, $title_txt);
+    letter-spacing: 8px;
+    text-align: center;
+    line-height: 100vh;
+    color: black;
+  }
+  .down {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    @include size-set(60px, 80px);
+    overflow: hidden;
+    color: black;
+    .arrow {
+      @include ab(1%);
+      @include font-set(50px, $inner_txt);
+      animation: drop 1.5s linear infinite;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    :nth-child(2) {
+      animation-delay: 0.4s;
+    }
+  }
+}
