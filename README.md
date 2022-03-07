@@ -1,5 +1,8 @@
-Vue.js를 활용한 메모용 홈페이지 제작
+Vue.js를 활용한 홈페이지 제작
 =======================
+## 1. 홈페이지 명
+* Carpediem
+
 ## 4. 진행과정
 * 2019-11-06 "Vue.js 코딩 공작소"를 활용해 학습    
   : [MVVM패턴](https://hyem-study.tistory.com/20), [생명주기](https://hyem-study.tistory.com/21), 조건문, 반복문 실습  
