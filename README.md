@@ -11,13 +11,13 @@
 * 화면 흑백반전
 ---------------
 
-## 4. 프로젝트 기간(22.02.21 ~ 22.03.07)
+## 3. 프로젝트 기간(22.02.21 ~ 22.03.07)
 * 2022.02.21  
   : Vue-CLI 프로젝트 생성 및 프로젝트 구조 이해 
 
 * 2022.02.22  
   : 메인화면 생성  
-  (main.vue,content.vue 2개의 컴포넌트로 분할)
+  ([main.vue](https://github.com/lunilun/Carpediem/blob/master/frontend/src/components/main.vue),content.vue 2개의 컴포넌트로 분할)
 
 * 2022.02.23  
   : node 서버 생성 및 axios post 테스트
