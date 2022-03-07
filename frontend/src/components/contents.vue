@@ -30,7 +30,6 @@ export default {
     }else{
       this.sizing = true;
     }
-
     this.elArrow = document.querySelectorAll(".arrow");
     this.elTilte = document.getElementsByClassName("contTitle");
     this.elItem = document.querySelectorAll(".item");
