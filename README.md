@@ -27,7 +27,7 @@
     node fs를 이용한 이미지 다운로드 테스트  
 
 * 2022.03.03  
-  : Read.vud / Write.vue 생성  
+  : [readForm.vue](https://github.com/lunilun/Carpediem/blob/master/frontend/src/components/readForm.vue) / [writeForm.vue](https://github.com/lunilun/Carpediem/blob/master/frontend/src/components/writeForm.vue) 생성  
     [MainLoading.vue](https://github.com/lunilun/Carpediem/blob/master/frontend/src/components/MainLoading.vue) 생성  
     흑백 반전 이벤트 설정  
 
