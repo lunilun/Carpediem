@@ -17,7 +17,7 @@
 
 * 2022.02.22  
   : 메인화면 생성(main.vue / content.vue 2개의 컴포넌트로 분할)  
-    [main.vue](https://github.com/lunilun/Carpediem/blob/master/frontend/src/components/main.vue)   [content.vue](https://github.com/lunilun/Carpediem/blob/master/frontend/src/components/contents.vue)
+    [main.vue](https://github.com/lunilun/Carpediem/blob/master/frontend/src/components/main.vue) / [content.vue](https://github.com/lunilun/Carpediem/blob/master/frontend/src/components/contents.vue)
 
 * 2022.02.23  
   : node 서버 생성 및 axios post 테스트
